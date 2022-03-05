@@ -3,7 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import Card from '../components/Card'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css';
+
+const BASE_URL = 'https://craquedex.vercel.app/api/craques'
 
 export default function Home() {
 
@@ -12,7 +14,7 @@ export default function Home() {
   useEffect(() => {
       const data = async () => {
         const result = await axios(
-          'http://localhost:3000/api/craques',
+          BASE_URL,
         );
         setPlayers(result.data);
       };

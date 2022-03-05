@@ -1,5 +1,5 @@
 import Player from '../../interfaces/Player';
-import styles from '../../styles/Home.module.css';
+import styles from '../../../styles/Home.module.css';
 
 interface HeaderProps {
     player: Player
