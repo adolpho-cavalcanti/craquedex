@@ -3,6 +3,7 @@ import Footer from '../Footer';
 import Header from '../Header';
 import Content from '../Content';
 import Player from '../../interfaces/Player';
+import Link from 'next/link';
 
 
 interface CardProps {
@@ -11,10 +12,14 @@ interface CardProps {
 
 export default function Card({ player }: CardProps) {
     return (
-        <div className={styles.card}>
-            <Header nation={player.nacionalidade} nome={player.nome} />
-            <Content player={player} />
-            <Footer posicao={player.posicao} nation={player.nacionalidade} />
-        </div>
+        <Link href={`/player/${player.id}`}>
+            <a>
+                <div className={styles.card}>
+                    <Header nation={player.nacionalidade} nome={player.nome} />
+                    <Content player={player} />
+                    <Footer posicao={player.posicao} nation={player.nacionalidade} />
+                </div>
+            </a>
+        </Link>
     )
 }
