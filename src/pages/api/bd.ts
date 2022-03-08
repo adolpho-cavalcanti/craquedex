@@ -120,7 +120,7 @@
       "id": 4,
       "nome": "Ronaldo",
       "posicao": "Atacante",
-      "imagem": "/player/cruijff.jpg",
+      "imagem": "/player/ronaldo.jpg",
       "nacionalidade": 
         {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
       ,

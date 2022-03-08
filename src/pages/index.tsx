@@ -13,7 +13,7 @@ export default function Home() {
 
   const playersSearched = useMemo(() => {
     const lowerSearch = search.toLowerCase();
-    return players.filter((player) => player.nome.toLowerCase().includes(lowerSearch));
+    return players.filter(({ nome }) => nome.toLowerCase().includes(lowerSearch));
   }, [players, search]);
 
   useEffect(() => {
