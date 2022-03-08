@@ -1,6 +1,5 @@
 import Nation from '../../interfaces/Nation';
 import styles from '../../../styles/Home.module.css';
-import Image from 'next/image';
 
 interface HeaderProps {
     nome: string,
@@ -13,7 +12,7 @@ export default function Header(props: HeaderProps) {
     return (
         <header className={styles.header}>
             <h2>{nome}</h2>
-            <Image src={nation.bandeira} 
+            <img src={nation.bandeira} 
                 alt={nation.nome} 
                 className={styles.bandeira}
             />
