@@ -3,9 +3,9 @@
       "id": 1,
       "nome": "Pelé",
       "posicao": "Atacante",
-      "imagem": "http://sagresonline.com.br/copadomundo/wp-content/uploads/2018/05/pele-brasil-1970.jpg",
+      "imagem": "/player/pele.jpg",
       "nacionalidade": 
-        {"nome": "Brasil", "bandeira": "https://cdn-icons-png.flaticon.com/512/206/206597.png"}
+        {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
       ,
       "melhorDoMundo": 7,
       "titulos": [
@@ -40,9 +40,9 @@
       "id": 2,
       "nome": "Messi",
       "posicao": "Atacante",
-      "imagem": "https://midia.gruposinos.com.br/_midias/jpg/2020/08/30/barcelona-19160237.jpg",
+      "imagem": "/player/messi.jpeg",
       "nacionalidade": 
-        {"nome": "Argentina", "bandeira": "https://cdn-icons-png.flaticon.com/512/330/330487.png"}
+        {"nome": "Argentina", "bandeira": "player/bandeiras/argentina.png"}
       ,
       "melhorDoMundo": 7,
       "titulos": [
@@ -77,9 +77,9 @@
       "id": 3,
       "nome": "Cristiano Ronaldo",
       "posicao": "Atacante",
-      "imagem": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Cristiano_Ronaldo_20120609.jpg",
+      "imagem": "/player/cristiano-ronaldo.jpg",
       "nacionalidade": 
-        {"nome": "Portugal", "bandeira": "https://cdn-icons-png.flaticon.com/512/206/206628.png"}
+        {"nome": "Portugal", "bandeira": "player/bandeiras/portugal.png"}
       ,
       "melhorDoMundo": 5,
       "titulos": [
@@ -120,9 +120,9 @@
       "id": 4,
       "nome": "Ronaldo",
       "posicao": "Atacante",
-      "imagem": "https://istoe.com.br/wp-content/uploads/sites/14/2016/01/mi_3187833398751076.jpg",
+      "imagem": "/player/cruijff.jpg",
       "nacionalidade": 
-        {"nome": "Brasil", "bandeira": "https://cdn-icons-png.flaticon.com/512/206/206597.png"}
+        {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
       ,
       "melhorDoMundo": 3,
       "titulos": [
@@ -163,9 +163,9 @@
       "id": 5,
       "nome": "Zinedine Zidane",
       "posicao": "Meio Campo",
-      "imagem": "https://i.pinimg.com/originals/6d/3e/9c/6d3e9c0fd4b39045498a5ca691e0fe43.png",
+      "imagem": "/player/zidane.png",
       "nacionalidade": 
-        {"nome": "França", "bandeira": "https://cdn-icons-png.flaticon.com/512/206/206657.png"}
+        {"nome": "França", "bandeira": "player/bandeiras/franca.png"}
       ,
       "melhorDoMundo": 2,
       "titulos": [
@@ -212,9 +212,9 @@
       "id": 6,
       "nome": "Romário",
       "posicao": "Atacante",
-      "imagem": "https://stcotvfoco.com.br/2020/03/romario-jogador-de-futebol-politicio-brasileiro.png",
+      "imagem": "/player/romario.jpg",
       "nacionalidade": 
-        {"nome": "Brasil", "bandeira": "https://cdn-icons-png.flaticon.com/512/206/206597.png"}
+        {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
       ,
       "melhorDoMundo": 1,
       "titulos": [
@@ -243,9 +243,9 @@
       "id": 7,
       "nome": "Ronaldinho",
       "posicao": "Atacante",
-      "imagem": "https://omunicipio.com.br/wp-content/uploads/2018/11/ronaldinho-gaucho.jpg",
+      "imagem": "/player/ronaldinho.jpg",
       "nacionalidade": 
-        {"nome": "Brasil", "bandeira": "https://cdn-icons-png.flaticon.com/512/206/206597.png"}
+        {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
       ,
       "melhorDoMundo": 2,
       "titulos": [
@@ -277,6 +277,197 @@
           "nome": "Campeonato Francês",
           "imagem": "",
           "peso": 5,
+          "qtdTitulos": 1
+        }
+      ],
+      "video": "",
+    },
+    {
+      "id": 8,
+      "nome": "Dí Stefano",
+      "posicao": "Atacante",
+      "imagem": "/player/di-stefano.png",
+      "nacionalidade": 
+        {"nome": "Espanha", "bandeira": "player/bandeiras/espanha.png"}
+      ,
+      "melhorDoMundo": 2,
+      "titulos": [
+        {
+          "nome": "Champions League",
+          "imagem": "",
+          "peso": 8,
+          "qtdTitulos": 5
+        },
+        {
+          "nome": "Campeonato Espanhol",
+          "imagem": "",
+          "peso": 5,
+          "qtdTitulos": 8
+        },
+        {
+          "nome": "Campeonato Argentino",
+          "imagem": "",
+          "peso": 5,
+          "qtdTitulos": 2
+        },
+        {
+          "nome": "Campeonato Colombiano",
+          "imagem": "",
+          "peso": 5,
+          "qtdTitulos": 3
+        },
+        {
+          "nome": "Mundial de Clubes",
+          "imagem": "",
+          "peso": 7,
+          "qtdTitulos": 1
+        }
+      ],
+      "video": "",
+    },
+    {
+      "id": 9,
+      "nome": "Puskás",
+      "posicao": "Atacante",
+      "imagem": "/player/puskas.jpg",
+      "nacionalidade": 
+        {"nome": "Hungria", "bandeira": "player/bandeiras/hungria.png"}
+      ,
+      "melhorDoMundo": 0,
+      "titulos": [
+        {
+          "nome": "Champions League",
+          "imagem": "",
+          "peso": 8,
+          "qtdTitulos": 3
+        },
+        {
+          "nome": "Campeonato Espanhol",
+          "imagem": "",
+          "peso": 5,
+          "qtdTitulos": 5
+        },
+        {
+          "nome": "Mundial de Clubes",
+          "imagem": "",
+          "peso": 7,
+          "qtdTitulos": 1
+        }
+      ],
+      "video": "",
+    },
+    {
+      "id": 10,
+      "nome": "Shevchenko",
+      "posicao": "Atacante",
+      "imagem": "/player/shevchenko.jpg",
+      "nacionalidade": 
+        {"nome": "Ucrânia", "bandeira": "player/bandeiras/ucrania.png"}
+      ,
+      "melhorDoMundo": 1,
+      "titulos": [
+        {
+          "nome": "Champions League",
+          "imagem": "",
+          "peso": 8,
+          "qtdTitulos": 1
+        },
+        {
+          "nome": "Campeonato Italiano",
+          "imagem": "",
+          "peso": 5,
+          "qtdTitulos": 1
+        },
+        {
+          "nome": "Campeonato Ucraniano",
+          "imagem": "",
+          "peso": 5,
+          "qtdTitulos": 5
+        }
+      ],
+      "video": "",
+    },
+    {
+      "id": 11,
+      "nome": "Johan Cruijff",
+      "posicao": "Meio Campo",
+      "imagem": "/player/cruijff.jpg",
+      "nacionalidade": 
+        {"nome": "Holanda", "bandeira": "player/bandeiras/holanda.png"}
+      ,
+      "melhorDoMundo": 3,
+      "titulos": [
+        {
+          "nome": "Champions League",
+          "imagem": "",
+          "peso": 8,
+          "qtdTitulos": 3
+        },
+        {
+          "nome": "Campeonato Holandês",
+          "imagem": "",
+          "peso": 5,
+          "qtdTitulos": 9
+        },
+        {
+          "nome": "Campeonato Espanhol",
+          "imagem": "",
+          "peso": 5,
+          "qtdTitulos": 1
+        },
+        {
+          "nome": "Mundial de Clubes",
+          "imagem": "",
+          "peso": 7,
+          "qtdTitulos": 1
+        }
+      ],
+      "video": "",
+    },
+    {
+      "id": 12,
+      "nome": "Franz Beckenbauer",
+      "posicao": "Zagueiro",
+      "imagem": "/player/beckenbauer.png",
+      "nacionalidade": 
+        {"nome": "Alemanha", "bandeira": "player/bandeiras/alemanha.png"}
+      ,
+      "melhorDoMundo": 2,
+      "titulos": [
+        {
+          "nome": "Copa do Mundo",
+          "imagem": "",
+          "peso": 10,
+          "qtdTitulos": 1
+        },
+        {
+          "nome": "Eurocopa",
+          "imagem": "",
+          "peso": 8,
+          "qtdTitulos": 1
+        },
+        {
+          "nome": "Champions League",
+          "imagem": "",
+          "peso": 8,
+          "qtdTitulos": 3
+        },
+        {
+          "nome": "Campeonato Alemão",
+          "imagem": "",
+          "peso": 5,
+          "qtdTitulos": 4
+        },
+        {
+          "nome": "Campeonato Estadunidense",
+          "imagem": "",
+          "peso": 5,
+          "qtdTitulos": 3
+        },
+        {
+          "nome": "Mundial de Clubes",
+          "imagem": "",
+          "peso": 7,
           "qtdTitulos": 1
         }
       ],

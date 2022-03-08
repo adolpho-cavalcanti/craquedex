@@ -11,7 +11,7 @@ export default function Content(props: HeaderProps) {
     const qtdBolaDeOuro = () => {
         var rows = [];
         for (var i = 1; i <= player.melhorDoMundo; i++) {
-            rows.push(<img key={i} alt="Bola de Ouro" src="https://img2.gratispng.com/20180712/vs/kisspng-ballon-d-or-2017-ballon-d-or-2016-2014-fifa-ballon-pallone-5b4813b8ad0819.5918159415314502967088.jpg" />);
+            rows.push(<img key={i} alt="Bola de Ouro" src="/player/ballon-door.jpg" />);
         }
         return rows
     }
