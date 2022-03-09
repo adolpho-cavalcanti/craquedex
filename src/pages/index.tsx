@@ -27,15 +27,19 @@ export default function Home() {
   }, []);
   
   return (
-    <>
-      <input 
-        type="text"
-        placeholder="Procurar a Lenda..." 
-        id="playerSearch"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-      <h2>{search}</h2>
+    <div className={styles.page}>
+      <div className={styles.headerLogo}>
+        <img src="/logo.png" alt="logo" />
+      </div>
+      <div className={styles.barraDePesquisa}>
+        <input 
+          type="text"
+          placeholder="Procurar a Lenda..." 
+          id="playerSearch"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
       <div className={styles.container}>
           {playersSearched.map((player) => (
               <Card 
@@ -44,6 +48,6 @@ export default function Home() {
               />
           ))}
       </div>
-    </>
+    </div>
   )
 }
