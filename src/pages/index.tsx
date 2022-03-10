@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { useEffect, useMemo, useState } from 'react';
 import Card from '../components/Card'
-import styles from '../../styles/Home.module.css';
+import styles from '../styles/Home.module.css';
+import HeaderSite from '../components/HeaderSite';
 
 const BASE_URL = 'https://craquedex.vercel.app/api/craques';
 const BASE_URL_LOCAL = 'http://localhost:3000/api/craques';
@@ -28,9 +29,7 @@ export default function Home() {
   
   return (
     <div className={styles.page}>
-      <div className={styles.headerLogo}>
-        <img src="/logo.png" alt="logo" />
-      </div>
+      <HeaderSite />
       <div className={styles.barraDePesquisa}>
         <input 
           type="text"
