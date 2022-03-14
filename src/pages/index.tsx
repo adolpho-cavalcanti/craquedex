@@ -35,7 +35,7 @@ export default function Home({players}: IPlayerProps) {
       <div className={styles.container}>
           {playersSearched.map((player) => (
               <Card 
-                key={player.id}
+                key={player._id}
                 player={player}
               />
           ))}
@@ -45,7 +45,7 @@ export default function Home({players}: IPlayerProps) {
 }
 
 export const getServerSideProps: GetServerSideProps<IPlayerProps> = async () => {
-  const result = await api.get('/');
+  const result = await api.get('http://localhost:8080/api/v1/legend');
   const players = await result.data;
   return { 
     props: { 

@@ -33,7 +33,7 @@ export default function PerfilPlayer({valor}: PlayerTrofeuProps) {
                         <div className={styles.dataPlayer}>
                             <span>Nome: {nome}</span>
                             <span>Posição: {posicao}</span>
-                            <span>País: {nacionalidade.nome}</span>
+                            <span>País: {nacionalidade}</span>
                             <div>
                                 <img alt="Bola de Ouro" src="/player/ballon-door.jpg" />
                                 <span>{melhorDoMundo}</span>

@@ -13,7 +13,7 @@ interface PlayerPageProps {
 
 export default function PlayerPage({ player }: PlayerPageProps) {
  
-    const legendPlayer = player[0];
+    const legendPlayer: Player = player;
     return (
         <ModalSalaDeTrofeuProvider valor={legendPlayer}>
             <div className={styles.page}>
@@ -25,19 +25,19 @@ export default function PlayerPage({ player }: PlayerPageProps) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const res = await api.get('/');
+    const res = await api.get('http://localhost:8080/api/v1/legend');
     const players = await res.data;
   
     const paths = players.map((player: Player) => ({
-      params: { id: player.id.toString() },
+      params: { id: player._id },
     }))
   
     return { paths, fallback: false }
   }
   
 export const getStaticProps: GetStaticProps<PlayerPageProps> = async ({ params }) => {
-    const res = await api.get(`/${params.id}`);
+    const res = await api.get(`http://localhost:8080/api/v1/legend/${params.id}`);
     const player = await res.data;
-  
+  console.log(player);
     return { props: { player } }
 }

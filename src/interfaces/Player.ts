@@ -2,11 +2,11 @@ import Nation from "./Nation"
 import Title from "./Title"
 
 export default interface Player {
-    id: number
+    _id: string
     nome: string
     posicao: string
     imagem: string
-    nacionalidade?: Nation
+    nacionalidade?: string
     melhorDoMundo?: number
     titulos?: Title[]
     video?: string

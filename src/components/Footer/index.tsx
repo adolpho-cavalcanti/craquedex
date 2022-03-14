@@ -3,7 +3,7 @@ import styles from '../../styles/Home.module.css';
 
 interface FooterProps {
     posicao: string,
-    nation: Nation
+    nation: string
 }
 
 export default function Footer({ posicao, nation }: FooterProps) {
@@ -11,7 +11,7 @@ export default function Footer({ posicao, nation }: FooterProps) {
         <footer className={styles.footer}>
             <span>Posição: {posicao}</span>
             <br/>
-            <span>País: {nation.nome}</span>
+            <span>País: {nation}</span>
         </footer>
     )
 } 
