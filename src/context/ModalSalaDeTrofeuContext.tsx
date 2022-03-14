@@ -5,7 +5,6 @@ import Player from '../interfaces/Player';
 interface ModalSalaDeTrofeuProviderData {
     modalVisible: boolean;
     setModalVisible: (value: boolean) => void;
-    // handleCloseModal: () => void; 
 }
 
 interface ModalSalaDeTrofeuProviderProps {

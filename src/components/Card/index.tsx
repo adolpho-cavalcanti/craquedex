@@ -13,7 +13,7 @@ interface CardProps {
 export default function Card({ player }: CardProps) {
     return (
         <Link href={`/player/${player.id}`}>
-            <a>
+            <a className={styles.linkCard}>
                 <div className={styles.card}>
                     <Header nation={player.nacionalidade} nome={player.nome} />
                     <Content player={player} />

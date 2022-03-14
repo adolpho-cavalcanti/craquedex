@@ -1,5 +1,6 @@
 export default interface Title {
-    nome: string,
+    nome: string
     imagem: string
     peso: number
+    qtdTitulos: number
 }

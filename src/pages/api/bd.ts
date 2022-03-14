@@ -11,26 +11,14 @@
       "titulos": [
         {
           "nome": "Copa do Mundo",
-          "imagem": "",
+          "imagem": "/trophy/copa-do-mundo.png",
           "peso": 10,
           "qtdTitulos": 3
         },
         {
           "nome": "Libertadores da América",
-          "imagem": "",
+          "imagem": "/trophy/libertadores.png",
           "peso": 8,
-          "qtdTitulos": 2
-        },
-        {
-          "nome": "Campeonato Brasileiro",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 5
-        },
-        {
-          "nome": "Mundial de Clubes",
-          "imagem": "",
-          "peso": 7,
           "qtdTitulos": 2
         }
       ],

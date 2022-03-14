@@ -8,7 +8,6 @@ export default interface Player {
     imagem: string
     nacionalidade?: Nation
     melhorDoMundo?: number
-    titulos?: Title
+    titulos?: Title[]
     video?: string
-    // clicou?: (e: any) => void
 }

@@ -11,13 +11,23 @@ export default function ModalSalaDeTrofeu({valorPlayer}: PlayerTrofeuProps) {
 
     const { setModalVisible } = useContext(ModalSalaDeTrofeuContext);
 
+    const { nome, titulos } = valorPlayer;
 
     return (
         <div className={styles.containerModal}>
             <div className={styles.modal}>
-                <h2>Minha modal</h2>
-                <p>{valorPlayer.nome} - Dentro do Modal de Troféu</p>
-                <button onClick={() => setModalVisible(false)}>X</button>
+                <div className={styles.headerModal}>
+                    <h3>{nome}</h3>
+                    <button className={styles.buttonBackPlayer} onClick={() => setModalVisible(false)}>X</button>
+                </div>
+                <div className={styles.prateleira}>
+                    {titulos.map((titulo, i) => 
+                        <div  className={styles.prateleiraTrophy}>
+                            <img key={i} alt={titulo.nome} src={titulo.imagem} width="80px" height="120px" />
+                            <span>{titulo.nome}</span>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     )

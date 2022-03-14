@@ -8,7 +8,7 @@ interface FooterProps {
 
 export default function Footer({ posicao, nation }: FooterProps) {
     return (
-        <footer>
+        <footer className={styles.footer}>
             <span>Posição: {posicao}</span>
             <br/>
             <span>País: {nation.nome}</span>
