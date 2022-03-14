@@ -3,15 +3,17 @@ import Card from '../components/Card'
 import styles from '../styles/Home.module.css';
 import HeaderSite from '../components/HeaderSite';
 import api from '../services/api';
+import Player from '../interfaces/Player';
+import { GetServerSideProps } from 'next';
 
-export default function Home({data}) {
 
-  const [players, setPlayers] = useState([]);
+interface IPlayerProps {
+  players: Player[];
+}
+
+export default function Home({players}: IPlayerProps) {
+
   const [search, setSearch] = useState('');
-
-  useEffect(() => {
-        setPlayers(data);
-  }, []);
 
   const playersSearched = useMemo(() => {
     const lowerSearch = search.toLowerCase();
@@ -42,12 +44,12 @@ export default function Home({data}) {
   )
 }
 
-export const getServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps<IPlayerProps> = async () => {
   const result = await api.get('/');
-  const data = await result.data;
+  const players = await result.data;
   return { 
     props: { 
-      data
+      players
     }
   }
 }

@@ -5,6 +5,7 @@ import Player from "../../interfaces/Player";
 import styles from '../../styles/Home.module.css';
 import HeaderSite from "../../components/HeaderSite";
 import api from "../../services/api";
+import { GetStaticPaths, GetStaticProps } from "next";
 
 interface PlayerPageProps {
     player: Player
@@ -23,7 +24,7 @@ export default function PlayerPage({ player }: PlayerPageProps) {
     )
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
     const res = await api.get('/');
     const players = await res.data;
   
@@ -34,7 +35,7 @@ export async function getStaticPaths() {
     return { paths, fallback: false }
   }
   
-export async function getStaticProps({ params }) {
+export const getStaticProps: GetStaticProps<PlayerPageProps> = async ({ params }) => {
     const res = await api.get(`/${params.id}`);
     const player = await res.data;
   
