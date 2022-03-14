@@ -22,7 +22,7 @@
           "qtdTitulos": 2
         }
       ],
-      "video": "",
+      "video": "https://www.youtube.com/embed/ioA0DwrriWM"
     },
     {
       "id": 2,
@@ -35,31 +35,13 @@
       "melhorDoMundo": 7,
       "titulos": [
         {
-          "nome": "Copa América",
-          "imagem": "",
-          "peso": 8,
-          "qtdTitulos": 1
-        },
-        {
           "nome": "Champions League",
-          "imagem": "",
+          "imagem": "/trophy/champions.jpeg",
           "peso": 8,
-          "qtdTitulos": 4
-        },
-        {
-          "nome": "Campeonato Espanhol",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 5
-        },
-        {
-          "nome": "Mundial de Clubes",
-          "imagem": "",
-          "peso": 7,
           "qtdTitulos": 4
         }
       ],
-      "video": "",
+      "video": "https://www.youtube.com/embed/fAtZibzHORo"
     },
     {
       "id": 3,
@@ -72,37 +54,13 @@
       "melhorDoMundo": 5,
       "titulos": [
         {
-          "nome": "Eurocopa",
-          "imagem": "",
-          "peso": 8,
-          "qtdTitulos": 1
-        },
-        {
           "nome": "Champions League",
-          "imagem": "",
+          "imagem": "/trophy/champions.jpeg",
           "peso": 8,
           "qtdTitulos": 5
-        },
-        {
-          "nome": "Campeonato Espanhol",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 3
-        },
-        {
-          "nome": "Campeonato Italiano",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 1
-        },
-        {
-          "nome": "Mundial de Clubes",
-          "imagem": "",
-          "peso": 7,
-          "qtdTitulos": 4
         }
       ],
-      "video": "",
+      "video": "https://www.youtube.com/embed/FunqByTaIOg"
     },
     {
       "id": 4,
@@ -116,36 +74,12 @@
       "titulos": [
         {
           "nome": "Copa do Mundo",
-          "imagem": "",
+          "imagem": "/trophy/copa-do-mundo.png",
           "peso": 10,
           "qtdTitulos": 2
-        },
-        {
-          "nome": "Campeonato Espanhol",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 2
-        },
-        {
-          "nome": "Campeonato Italiano",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 1
-        },
-        {
-          "nome": "Campeonato Holandes",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 1
-        },
-        {
-          "nome": "Mundial de Clubes",
-          "imagem": "",
-          "peso": 7,
-          "qtdTitulos": 1
         }
       ],
-      "video": "",
+      "video": "https://www.youtube.com/embed/P7f2k6icJ-M"
     },
     {
       "id": 5,
@@ -159,42 +93,18 @@
       "titulos": [
         {
           "nome": "Copa do Mundo",
-          "imagem": "",
+          "imagem": "/trophy/copa-do-mundo.png",
           "peso": 10,
           "qtdTitulos": 1
         },
         {
-          "nome": "Eurocopa",
-          "imagem": "",
-          "peso": 8,
-          "qtdTitulos": 1
-        },
-        {
           "nome": "Champions League",
-          "imagem": "",
+          "imagem": "/trophy/champions.jpeg",
           "peso": 8,
-          "qtdTitulos": 2
-        },
-        {
-          "nome": "Campeonato Espanhol",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 2
-        },
-        {
-          "nome": "Campeonato Italiano",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 1
-        },
-        {
-          "nome": "Mundial de Clubes",
-          "imagem": "",
-          "peso": 7,
           "qtdTitulos": 2
         }
       ],
-      "video": "",
+      "video": "https://www.youtube.com/embed/j4jfxEEbJMY"
     },
     {
       "id": 6,
@@ -208,24 +118,12 @@
       "titulos": [
         {
           "nome": "Copa do Mundo",
-          "imagem": "",
+          "imagem": "/trophy/copa-do-mundo.png",
           "peso": 10,
           "qtdTitulos": 1
-        },
-        {
-          "nome": "Campeonato Espanhol",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 1
-        },
-        {
-          "nome": "Campeonato Holandes",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 1
-        },
+        }
       ],
-      "video": "",
+      "video": "https://www.youtube.com/embed/6HS1B_2jzCo"
     },
     {
       "id": 7,
@@ -239,36 +137,24 @@
       "titulos": [
         {
           "nome": "Copa do Mundo",
-          "imagem": "",
+          "imagem": "/trophy/copa-do-mundo.png",
           "peso": 10,
           "qtdTitulos": 1
         },
         {
           "nome": "Libertadores da América",
-          "imagem": "",
+          "imagem": "/trophy/libertadores.png",
           "peso": 8,
           "qtdTitulos": 1
         },
         {
           "nome": "Champions League",
-          "imagem": "",
+          "imagem": "/trophy/champions.jpeg",
           "peso": 8,
-          "qtdTitulos": 1
-        },
-        {
-          "nome": "Campeonato Espanhol",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 2
-        },
-        {
-          "nome": "Campeonato Francês",
-          "imagem": "",
-          "peso": 5,
           "qtdTitulos": 1
         }
       ],
-      "video": "",
+      "video": "https://www.youtube.com/embed/_dBz4dTZocg"
     },
     {
       "id": 8,
@@ -282,36 +168,12 @@
       "titulos": [
         {
           "nome": "Champions League",
-          "imagem": "",
+          "imagem": "/trophy/champions.jpeg",
           "peso": 8,
           "qtdTitulos": 5
-        },
-        {
-          "nome": "Campeonato Espanhol",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 8
-        },
-        {
-          "nome": "Campeonato Argentino",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 2
-        },
-        {
-          "nome": "Campeonato Colombiano",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 3
-        },
-        {
-          "nome": "Mundial de Clubes",
-          "imagem": "",
-          "peso": 7,
-          "qtdTitulos": 1
         }
       ],
-      "video": "",
+      "video": "https://www.youtube.com/embed/tr4ZnruKAsY"
     },
     {
       "id": 9,
@@ -321,28 +183,16 @@
       "nacionalidade": 
         {"nome": "Hungria", "bandeira": "player/bandeiras/hungria.png"}
       ,
-      "melhorDoMundo": 0,
+      "melhorDoMundo": 1,
       "titulos": [
         {
           "nome": "Champions League",
-          "imagem": "",
+          "imagem": "/trophy/champions.jpeg",
           "peso": 8,
           "qtdTitulos": 3
-        },
-        {
-          "nome": "Campeonato Espanhol",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 5
-        },
-        {
-          "nome": "Mundial de Clubes",
-          "imagem": "",
-          "peso": 7,
-          "qtdTitulos": 1
         }
       ],
-      "video": "",
+      "video": "https://www.youtube.com/embed/zeUp_aGj8YA"
     },
     {
       "id": 10,
@@ -356,24 +206,12 @@
       "titulos": [
         {
           "nome": "Champions League",
-          "imagem": "",
+          "imagem": "/trophy/champions.jpeg",
           "peso": 8,
           "qtdTitulos": 1
-        },
-        {
-          "nome": "Campeonato Italiano",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 1
-        },
-        {
-          "nome": "Campeonato Ucraniano",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 5
         }
       ],
-      "video": "",
+      "video": "https://www.youtube.com/embed/L1NLWQW4F_M"
     },
     {
       "id": 11,
@@ -387,30 +225,12 @@
       "titulos": [
         {
           "nome": "Champions League",
-          "imagem": "",
+          "imagem": "/trophy/champions.jpeg",
           "peso": 8,
           "qtdTitulos": 3
-        },
-        {
-          "nome": "Campeonato Holandês",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 9
-        },
-        {
-          "nome": "Campeonato Espanhol",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 1
-        },
-        {
-          "nome": "Mundial de Clubes",
-          "imagem": "",
-          "peso": 7,
-          "qtdTitulos": 1
         }
       ],
-      "video": "",
+      "video": "https://www.youtube.com/embed/fRmJuiy_Y6w"
     },
     {
       "id": 12,
@@ -424,41 +244,17 @@
       "titulos": [
         {
           "nome": "Copa do Mundo",
-          "imagem": "",
+          "imagem": "/trophy/copa-do-mundo.png",
           "peso": 10,
           "qtdTitulos": 1
         },
         {
-          "nome": "Eurocopa",
-          "imagem": "",
-          "peso": 8,
-          "qtdTitulos": 1
-        },
-        {
           "nome": "Champions League",
-          "imagem": "",
+          "imagem": "/trophy/champions.jpeg",
           "peso": 8,
           "qtdTitulos": 3
-        },
-        {
-          "nome": "Campeonato Alemão",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 4
-        },
-        {
-          "nome": "Campeonato Estadunidense",
-          "imagem": "",
-          "peso": 5,
-          "qtdTitulos": 3
-        },
-        {
-          "nome": "Mundial de Clubes",
-          "imagem": "",
-          "peso": 7,
-          "qtdTitulos": 1
         }
       ],
-      "video": "",
+      "video": "https://www.youtube.com/embed/yfLvk6CkaNQ"
     }
   ];
