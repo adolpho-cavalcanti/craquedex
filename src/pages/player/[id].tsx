@@ -22,11 +22,10 @@ export default function PlayerPage({ player }: PlayerPageProps) {
     )
 }
 
-const BASE_URL = 'https://craquedex.vercel.app/api/craques';
-const BASE_URL_LOCAL = 'http://localhost:3000/api/craques';
+const baseUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/craques`;
 
 export async function getStaticPaths() {
-    const res = await axios(BASE_URL)
+    const res = await axios(baseUrl)
     const players = await res.data;
   
     const paths = players.map((player: Player) => ({
@@ -37,7 +36,7 @@ export async function getStaticPaths() {
   }
   
 export async function getStaticProps({ params }) {
-    const res = await axios(`${BASE_URL}/${params.id}`)
+    const res = await axios(`${baseUrl}/${params.id}`)
     const player = await res.data;
   
     return { props: { player } }

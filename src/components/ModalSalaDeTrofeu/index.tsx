@@ -22,8 +22,8 @@ export default function ModalSalaDeTrofeu({valorPlayer}: PlayerTrofeuProps) {
                 </div>
                 <div className={styles.prateleira}>
                     {titulos.map((titulo, i) => 
-                        <div  className={styles.prateleiraTrophy}>
-                            <img key={i} alt={titulo.nome} src={titulo.imagem} width="80px" height="120px" />
+                        <div key={i} className={styles.prateleiraTrophy}>
+                            <img alt={titulo.nome} src={titulo.imagem} width="80px" height="120px" />
                             <span>{titulo.nome}</span>
                         </div>
                     )}

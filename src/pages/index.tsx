@@ -4,8 +4,7 @@ import Card from '../components/Card'
 import styles from '../styles/Home.module.css';
 import HeaderSite from '../components/HeaderSite';
 
-const BASE_URL = 'https://craquedex.vercel.app/api/craques';
-const BASE_URL_LOCAL = 'http://localhost:3000/api/craques';
+const baseUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/craques`;
 
 export default function Home() {
 
@@ -20,7 +19,7 @@ export default function Home() {
   useEffect(() => {
       const data = async () => {
         const result = await axios(
-          BASE_URL,
+          baseUrl,
         );
         setPlayers(result.data);
       };
