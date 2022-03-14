@@ -4,6 +4,7 @@ import { ModalSalaDeTrofeuProvider } from "../../context/ModalSalaDeTrofeuContex
 import Player from "../../interfaces/Player";
 import styles from '../../styles/Home.module.css';
 import HeaderSite from "../../components/HeaderSite";
+import api from "../../services/api";
 
 interface PlayerPageProps {
     player: Player
@@ -22,10 +23,8 @@ export default function PlayerPage({ player }: PlayerPageProps) {
     )
 }
 
-const baseUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/craques`;
-
 export async function getStaticPaths() {
-    const res = await axios(baseUrl)
+    const res = await api.get('/');
     const players = await res.data;
   
     const paths = players.map((player: Player) => ({
@@ -36,7 +35,7 @@ export async function getStaticPaths() {
   }
   
 export async function getStaticProps({ params }) {
-    const res = await axios(`${baseUrl}/${params.id}`)
+    const res = await api.get(`/${params.id}`);
     const player = await res.data;
   
     return { props: { player } }
