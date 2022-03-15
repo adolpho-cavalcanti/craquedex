@@ -105,13 +105,13 @@
   color: black;
   border-radius: 10px;
   font-weight: bold;
-  padding: 1rem;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .headerModal {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem;
 }
 .linkCard {
   text-decoration: none;
@@ -166,19 +166,23 @@
   0 3px 6px rgb(243, 86, 86), 0 3px 6px rgb(243, 86, 86);
   transition: 0.5s;
 }
-.buttonTrophy {
+.buttonTrophy, .buttonTrophyTwo {
   cursor: pointer;
   padding: 10px 20px;
-  background: #f5dd29;
+  background: #DAA520;
   color:  #000;
   font-weight: bold;
-  border: 1px solid #000;
   border-radius: 30px;
   transition: 0.5s;
 }
-.buttonTrophy:hover {
+.buttonTrophy:hover, .buttonTrophyTwo:hover {
   box-shadow: 0 3px 6px #000, 0 3px 6px #000,
   0 3px 6px #000, 0 3px 6px #000;
+}
+.buttonTrophyTwo{ 
+  margin-bottom: -20px; 
+  z-index: 1000; 
+  padding: 20px 30px;
 }
 .dataPlayer {
   display: flex;
@@ -193,7 +197,7 @@
   border-radius: 5px;
 }
 .dataPlayer > span:hover, .dataPlayer > div:hover {
-  background: #f5dd29;
+  background: #DAA520;
   transition: 0.5s;
   border: 1px solid #000;
 }
@@ -207,23 +211,36 @@
   align-items: center;
 }
 .prateleira {
-  margin: 2rem;
   display: flex;
   flex-wrap: wrap;
-
-}
-.prateleiraTrophy {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  border-radius: 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom:20px;
+  background:
+    linear-gradient(
+      #673A1B 0%,#845630 5%,#7E4D27 10%,#B1763C 15%,#54341C 20%,
+      #673A1B 25%,#845630 30%,#7E4D27 35%,#B1763C 40%,#54341C 46%,
+      #673A1B 51%,#845630 56%,#7E4D27 61%,#B1763C 67%,#54341C 73%,
+      #673A1B 78%,#845630 85%,#7E4D27 89%,#B1763C 94%,#54341C 100%
+    )
+    no-repeat; 
 }
-
+.prateleira > img {
+  margin: 20px;
+  margin-bottom: 0px;
+  padding: 5px;
+  width: 160px;
+  height: 240px;
+}
+.placaDourada {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
 
 @media (max-width: 600px) {
   .containerPlayer {

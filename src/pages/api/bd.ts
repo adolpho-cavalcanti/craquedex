@@ -36,7 +36,7 @@
       "titulos": [
         {
           "nome": "Champions League",
-          "imagem": "/trophy/champions.jpeg",
+          "imagem": "/trophy/champions.png",
           "peso": 8,
           "qtdTitulos": 4
         }
@@ -55,7 +55,7 @@
       "titulos": [
         {
           "nome": "Champions League",
-          "imagem": "/trophy/champions.jpeg",
+          "imagem": "/trophy/champions.png",
           "peso": 8,
           "qtdTitulos": 5
         }
@@ -99,7 +99,7 @@
         },
         {
           "nome": "Champions League",
-          "imagem": "/trophy/champions.jpeg",
+          "imagem": "/trophy/champions.png",
           "peso": 8,
           "qtdTitulos": 2
         }
@@ -149,7 +149,7 @@
         },
         {
           "nome": "Champions League",
-          "imagem": "/trophy/champions.jpeg",
+          "imagem": "/trophy/champions.png",
           "peso": 8,
           "qtdTitulos": 1
         }
@@ -168,7 +168,7 @@
       "titulos": [
         {
           "nome": "Champions League",
-          "imagem": "/trophy/champions.jpeg",
+          "imagem": "/trophy/champions.png",
           "peso": 8,
           "qtdTitulos": 5
         }
@@ -187,7 +187,7 @@
       "titulos": [
         {
           "nome": "Champions League",
-          "imagem": "/trophy/champions.jpeg",
+          "imagem": "/trophy/champions.png",
           "peso": 8,
           "qtdTitulos": 3
         }
@@ -206,7 +206,7 @@
       "titulos": [
         {
           "nome": "Champions League",
-          "imagem": "/trophy/champions.jpeg",
+          "imagem": "/trophy/champions.png",
           "peso": 8,
           "qtdTitulos": 1
         }
@@ -225,7 +225,7 @@
       "titulos": [
         {
           "nome": "Champions League",
-          "imagem": "/trophy/champions.jpeg",
+          "imagem": "/trophy/champions.png",
           "peso": 8,
           "qtdTitulos": 3
         }
@@ -250,7 +250,7 @@
         },
         {
           "nome": "Champions League",
-          "imagem": "/trophy/champions.jpeg",
+          "imagem": "/trophy/champions.png",
           "peso": 8,
           "qtdTitulos": 3
         }

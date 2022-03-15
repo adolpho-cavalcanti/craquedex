@@ -13,6 +13,18 @@ export default function ModalSalaDeTrofeu({valorPlayer}: PlayerTrofeuProps) {
 
     const { nome, titulos } = valorPlayer;
 
+    const qtdBolaDeOuro = () => {
+        var rows = [];
+        var increment = 0;
+        titulos.map(titulo =>{
+            for (var i = 1; i <= titulo.qtdTitulos; i++) {
+                increment++;
+                rows.push(<img key={increment} alt={titulo.nome} src={titulo.imagem} />);
+            }
+        });
+        return rows;
+    }
+
     return (
         <div className={styles.containerModal}>
             <div className={styles.modal}>
@@ -20,13 +32,11 @@ export default function ModalSalaDeTrofeu({valorPlayer}: PlayerTrofeuProps) {
                     <h3>{nome}</h3>
                     <button className={styles.buttonBackPlayer} onClick={() => setModalVisible(false)}>X</button>
                 </div>
+                <div className={styles.placaDourada}>
+                    <button className={styles.buttonTrophyTwo} disabled>Sala de Troféus</button>
+                </div>
                 <div className={styles.prateleira}>
-                    {titulos.map((titulo, i) => 
-                        <div key={i} className={styles.prateleiraTrophy}>
-                            <img alt={titulo.nome} src={titulo.imagem} width="80px" height="120px" />
-                            <span>{titulo.qtdTitulos}x {titulo.nome}</span>
-                        </div>
-                    )}
+                    {qtdBolaDeOuro()}
                 </div>
             </div>
         </div>
