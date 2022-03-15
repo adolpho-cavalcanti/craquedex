@@ -183,6 +183,7 @@
   margin-bottom: -20px; 
   z-index: 1000; 
   padding: 20px 30px;
+  font-size: 24px;
 }
 .dataPlayer {
   display: flex;
@@ -234,6 +235,8 @@
   padding: 5px;
   width: 160px;
   height: 240px;
+  border-radius: 20px;
+  border-bottom: 20px solid #4c2601;
 }
 .placaDourada {
   width:100%;
