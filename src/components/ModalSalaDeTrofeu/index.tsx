@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import styles from '../../styles/Home.module.css'
 import { ModalSalaDeTrofeuContext } from '../../context/ModalSalaDeTrofeuContext';
 import Player from '../../interfaces/Player';
+import { ButtonBackPlayer, ButtonTrophyTwo, ContainerModal, HeaderModal, Modal, PlacaDourada, Prateleira } from '../../styles/components/ModalSalaDeTrofeu';
 
 interface PlayerTrofeuProps {
     valorPlayer: Player;
@@ -25,27 +25,20 @@ export default function ModalSalaDeTrofeu({valorPlayer}: PlayerTrofeuProps) {
         return rows;
     };
 
-    const points = titulos.map(titulo => {
-        return titulo.peso * titulo.qtdTitulos
-    });
-    var total = points.reduce(function(total, numero){
-        return total + numero;
-    }, 0);
-
     return (
-        <div className={styles.containerModal}>
-            <div className={styles.modal}>
-                <div className={styles.headerModal}>
+        <ContainerModal>
+            <Modal>
+                <HeaderModal>
                     <h3>{nome}</h3>
-                    <button className={styles.buttonBackPlayer} onClick={() => setModalVisible(false)}>X</button>
-                </div>
-                <div className={styles.placaDourada}>
-                    <button className={styles.buttonTrophyTwo} disabled>Sala de Troféus</button>
-                </div>
-                <div className={styles.prateleira}>
+                    <ButtonBackPlayer onClick={() => setModalVisible(false)}>X</ButtonBackPlayer>
+                </HeaderModal>
+                <PlacaDourada>
+                    <ButtonTrophyTwo disabled>Sala de Troféus</ButtonTrophyTwo>
+                </PlacaDourada>
+                <Prateleira>
                     {qtdDeTrofeus()}
-                </div>
-            </div>
-        </div>
+                </Prateleira>
+            </Modal>
+        </ContainerModal>
     )
 }

@@ -1,9 +1,9 @@
-import styles from '../../styles/Home.module.css';
+import { HeaderLogo } from '../../styles/components/HeaderSite';
 
 export default function HeaderSite() {
     return (
-        <div className={styles.headerLogo}>
+        <HeaderLogo>
             <img src="/logo.png" alt="logo" />
-        </div>
+        </HeaderLogo>
     )
 }

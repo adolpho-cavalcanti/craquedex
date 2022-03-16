@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useContext } from "react";
 import { ModalSalaDeTrofeuContext } from "../../context/ModalSalaDeTrofeuContext";
 import Player from "../../interfaces/Player";
-import styles from '../../styles/Home.module.css'
+import { ButtonActionsPlayer, ButtonBackHome, ButtonTrophy, ContainerPlayer, ContentPlayer, DataPlayer, ImgPlayer, PlayerStyles } from "../../styles/components/PerfilPlayer";
 
 interface PlayerTrofeuProps {
     valor: Player;
@@ -16,21 +16,21 @@ export default function PerfilPlayer({valor}: PlayerTrofeuProps) {
     const { imagem, nome, posicao, nacionalidade, melhorDoMundo  } = valor;
 
     return(
-        <div className={styles.containerPlayer}>
+        <ContainerPlayer>
             {!modalVisible 
                 ? 
-                <div className={styles.player}>
-                    <div className={styles.imgPlayer}>
+                <PlayerStyles>
+                    <ImgPlayer>
                         <img src={imagem} alt={nome} />
-                    </div>
-                    <div className={styles.contentPlayer}>
-                        <div className={styles.buttonActionsPlayer}>
-                            <button className={styles.buttonTrophy} type="button" onClick={() =>setModalVisible(true)}>SALA DE TROFÉUS</button>
-                            <button className={styles.buttonBackHome} type="button" onClick={() => router.push('/')}>
+                    </ImgPlayer>
+                    <ContentPlayer>
+                        <ButtonActionsPlayer>
+                            <ButtonTrophy type="button" onClick={() =>setModalVisible(true)}>SALA DE TROFÉUS</ButtonTrophy>
+                            <ButtonBackHome type="button" onClick={() => router.push('/')}>
                                 X
-                            </button>
-                        </div>
-                        <div className={styles.dataPlayer}>
+                            </ButtonBackHome>
+                        </ButtonActionsPlayer>
+                        <DataPlayer>
                             <span>Nome: {nome}</span>
                             <span>Posição: {posicao}</span>
                             <span>País: {nacionalidade.nome}</span>
@@ -38,12 +38,12 @@ export default function PerfilPlayer({valor}: PlayerTrofeuProps) {
                                 <img alt="Bola de Ouro" src="/player/ballon-door.jpg" />
                                 <span>{melhorDoMundo}</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </DataPlayer>
+                    </ContentPlayer>
+                </PlayerStyles>
                 :
                 ''
             }
-        </div>
+        </ContainerPlayer>
     )
 }
