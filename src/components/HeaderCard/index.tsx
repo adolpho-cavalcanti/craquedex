@@ -1,21 +1,20 @@
 import Nation from '../../interfaces/Nation';
-import styles from '../../styles/Home.module.css';
+import { Header } from '../../styles/components/HeaderCard';
 
 interface HeaderProps {
     nome: string,
     nation: Nation
 }
 
-export default function Header(props: HeaderProps) {
+export default function HeaderCard(props: HeaderProps) {
     const nome = props.nome
     const nation = props.nation
     return (
-        <header className={styles.header}>
-            <h2>{nome}</h2>
+        <Header>
+            <h3>{nome}</h3>
             <img src={nation.bandeira} 
                 alt={nation.nome} 
-                className={styles.bandeira}
             />
-        </header>
+        </Header>
     )
 }

@@ -1,9 +1,9 @@
-import styles from '../../styles/Home.module.css';
-import Footer from '../Footer';
-import Header from '../Header';
-import Content from '../Content';
+import FooterCard from '../FooterCard';
+import HeaderCard from '../HeaderCard';
+import ContentCard from '../ContentCard';
 import Player from '../../interfaces/Player';
 import Link from 'next/link';
+import { CardPlayer, LinkCard } from '../../styles/components/Card';
 
 
 interface CardProps {
@@ -13,13 +13,13 @@ interface CardProps {
 export default function Card({ player }: CardProps) {
     return (
         <Link href={`/player/${player.id}`}>
-            <a className={styles.linkCard}>
-                <div className={styles.card}>
-                    <Header nation={player.nacionalidade} nome={player.nome} />
-                    <Content player={player} />
-                    <Footer posicao={player.posicao} nation={player.nacionalidade} />
-                </div>
-            </a>
+            <LinkCard>
+                <CardPlayer>
+                    <HeaderCard nation={player.nacionalidade} nome={player.nome} />
+                    <ContentCard player={player} />
+                    <FooterCard posicao={player.posicao} nation={player.nacionalidade} />
+                </CardPlayer>
+            </LinkCard>
         </Link>
     )
 }

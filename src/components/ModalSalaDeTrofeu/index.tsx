@@ -13,7 +13,7 @@ export default function ModalSalaDeTrofeu({valorPlayer}: PlayerTrofeuProps) {
 
     const { nome, titulos } = valorPlayer;
 
-    const qtdBolaDeOuro = () => {
+    const qtdDeTrofeus = () => {
         var rows = [];
         var increment = 0;
         titulos.map(titulo =>{
@@ -23,7 +23,14 @@ export default function ModalSalaDeTrofeu({valorPlayer}: PlayerTrofeuProps) {
             }
         });
         return rows;
-    }
+    };
+
+    const points = titulos.map(titulo => {
+        return titulo.peso * titulo.qtdTitulos
+    });
+    var total = points.reduce(function(total, numero){
+        return total + numero;
+    }, 0);
 
     return (
         <div className={styles.containerModal}>
@@ -36,7 +43,7 @@ export default function ModalSalaDeTrofeu({valorPlayer}: PlayerTrofeuProps) {
                     <button className={styles.buttonTrophyTwo} disabled>Sala de Troféus</button>
                 </div>
                 <div className={styles.prateleira}>
-                    {qtdBolaDeOuro()}
+                    {qtdDeTrofeus()}
                 </div>
             </div>
         </div>

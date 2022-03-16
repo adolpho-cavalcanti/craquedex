@@ -1,11 +1,10 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import Card from '../components/Card'
-import styles from '../styles/Home.module.css';
 import HeaderSite from '../components/HeaderSite';
 import api from '../services/api';
 import Player from '../interfaces/Player';
 import { GetServerSideProps } from 'next';
-
+import { Page, Container, BarraDePesquisa } from '../styles/pages/Home';
 
 interface IPlayerProps {
   players: Player[];
@@ -21,9 +20,9 @@ export default function Home({players}: IPlayerProps) {
   }, [players, search]);
   
   return (
-    <div className={styles.page}>
+    <Page>
       <HeaderSite />
-      <div className={styles.barraDePesquisa}>
+      <BarraDePesquisa>
         <input 
           type="text"
           placeholder="Procurar a Lenda..." 
@@ -31,16 +30,16 @@ export default function Home({players}: IPlayerProps) {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-      </div>
-      <div className={styles.container}>
+      </BarraDePesquisa>
+      <Container>
           {playersSearched.map((player) => (
               <Card 
                 key={player.id}
                 player={player}
               />
           ))}
-      </div>
-    </div>
+      </Container>
+    </Page>
   )
 }
 

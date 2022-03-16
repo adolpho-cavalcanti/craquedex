@@ -1,11 +1,12 @@
 import Player from '../../interfaces/Player';
+import { BolaDeOuro, Content, FotoJogador } from '../../styles/components/ContentCard';
 import styles from '../../styles/Home.module.css';
 
 interface HeaderProps {
     player: Player
 }
 
-export default function Content(props: HeaderProps) {
+export default function ContentCard(props: HeaderProps) {
     const player = props.player;
 
     const qtdBolaDeOuro = () => {
@@ -16,13 +17,13 @@ export default function Content(props: HeaderProps) {
         return rows
     }
     return (
-        <div className={styles.content}>
-            <section className={styles.bolaDeOuro}>
+        <Content>
+            <BolaDeOuro>
                 {qtdBolaDeOuro()}
-            </section>
-            <section className={styles.fotoJogador}>
+            </BolaDeOuro>
+            <FotoJogador>
                 <img src={player.imagem} alt={`Foto ${player.nome}`} />
-            </section>
-        </div>
+            </FotoJogador>
+        </Content>
     )
 }
