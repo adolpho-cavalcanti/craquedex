@@ -3,7 +3,7 @@
       "id": 1,
       "nome": "Pelé",
       "posicao": "Atacante",
-      "imagem": "/player/pele.jpg",
+      "imagem": "/player/pele.png",
       "nacionalidade": 
         {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
       ,
@@ -28,7 +28,7 @@
       "id": 2,
       "nome": "Messi",
       "posicao": "Atacante",
-      "imagem": "/player/messi.jpeg",
+      "imagem": "/player/messi.png",
       "nacionalidade": 
         {"nome": "Argentina", "bandeira": "player/bandeiras/argentina.png"}
       ,
@@ -47,7 +47,7 @@
       "id": 3,
       "nome": "Cristiano Ronaldo",
       "posicao": "Atacante",
-      "imagem": "/player/cristiano-ronaldo.jpg",
+      "imagem": "/player/cristiano-ronaldo.png",
       "nacionalidade": 
         {"nome": "Portugal", "bandeira": "player/bandeiras/portugal.png"}
       ,
@@ -66,7 +66,7 @@
       "id": 4,
       "nome": "Ronaldo",
       "posicao": "Atacante",
-      "imagem": "/player/ronaldo.jpg",
+      "imagem": "/player/ronaldo.png",
       "nacionalidade": 
         {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
       ,
@@ -110,7 +110,7 @@
       "id": 6,
       "nome": "Romário",
       "posicao": "Atacante",
-      "imagem": "/player/romario.jpg",
+      "imagem": "/player/romario.png",
       "nacionalidade": 
         {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
       ,
@@ -129,7 +129,7 @@
       "id": 7,
       "nome": "Ronaldinho",
       "posicao": "Atacante",
-      "imagem": "/player/ronaldinho.jpg",
+      "imagem": "/player/ronaldinho.png",
       "nacionalidade": 
         {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
       ,
@@ -179,7 +179,7 @@
       "id": 9,
       "nome": "Puskás",
       "posicao": "Atacante",
-      "imagem": "/player/puskas.jpg",
+      "imagem": "/player/puskas.png",
       "nacionalidade": 
         {"nome": "Hungria", "bandeira": "player/bandeiras/hungria.png"}
       ,
@@ -198,7 +198,7 @@
       "id": 10,
       "nome": "Shevchenko",
       "posicao": "Atacante",
-      "imagem": "/player/shevchenko.jpg",
+      "imagem": "/player/shevchenko.png",
       "nacionalidade": 
         {"nome": "Ucrânia", "bandeira": "player/bandeiras/ucrania.png"}
       ,
@@ -217,7 +217,7 @@
       "id": 11,
       "nome": "Johan Cruijff",
       "posicao": "Meio Campo",
-      "imagem": "/player/cruijff.jpg",
+      "imagem": "/player/cruijff.png",
       "nacionalidade": 
         {"nome": "Holanda", "bandeira": "player/bandeiras/holanda.png"}
       ,

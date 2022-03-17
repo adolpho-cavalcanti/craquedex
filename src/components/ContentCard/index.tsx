@@ -12,7 +12,7 @@ export default function ContentCard(props: HeaderProps) {
     const qtdBolaDeOuro = () => {
         var rows = [];
         for (var i = 1; i <= player.melhorDoMundo; i++) {
-            rows.push(<img key={i} alt="Bola de Ouro" src="/player/ballon-door.jpg" />);
+            rows.push(<img key={i} alt="Bola de Ouro" src="/player/ballon-door.png" />);
         }
         return rows
     }

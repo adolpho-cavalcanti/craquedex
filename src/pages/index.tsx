@@ -1,10 +1,12 @@
 import { useMemo, useState } from 'react';
-import Card from '../components/Card'
 import HeaderSite from '../components/HeaderSite';
 import api from '../services/api';
 import Player from '../interfaces/Player';
 import { GetServerSideProps } from 'next';
 import { Page, Container, BarraDePesquisa } from '../styles/pages/Home';
+import CardAnimation from '../components/Cardanimation';
+import { motion } from 'framer-motion';
+import Variantes from '../components/Variantes';
 
 interface IPlayerProps {
   players: Player[];
@@ -33,9 +35,10 @@ export default function Home({players}: IPlayerProps) {
       </BarraDePesquisa>
       <Container>
           {playersSearched.map((player) => (
-              <Card 
+              <CardAnimation 
                 key={player.id}
                 player={player}
+                layoutId={player.imagem}
               />
           ))}
       </Container>

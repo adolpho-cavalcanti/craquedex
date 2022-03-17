@@ -18,12 +18,13 @@ export const PlayerStyles = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    background: #fff;
-    border-radius: 2px;
+    background: #2A4A01;
     height: 320px;
     width: 100%;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px #2A4A01, 0 3px 6px #2A4A01;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
     @media(max-width: 600px) {
         flex-direction: column;
         height: 100%;
@@ -32,6 +33,8 @@ export const PlayerStyles = styled.div`
 export const ImgPlayer = styled.div`
     width: 30%;
     height: 100%;
+    background: #000;
+    border-bottom-left-radius: 25px;
     img {
         width: 100%;
         height: 100%;
@@ -66,6 +69,7 @@ export const ButtonTrophy = styled.button`
     font-weight: bold;
     border-radius: 30px;
     transition: 0.5s;
+    z-index: 99;
     :hover {
         box-shadow: 0 3px 6px #000, 0 3px 6px #000,
         0 3px 6px #000, 0 3px 6px #000;
@@ -77,15 +81,14 @@ export const ButtonBackHome = styled.button`
     margin-right: 20px;
     cursor: pointer;
     padding: 10px 20px;
-    background: #fff;
-    color:  red;
+    background: red;
+    color:  #fff;
     font-weight: bold;
     border: 4px solid red;
     border-radius: 10px;
     transition: 0.5s;
+    z-index: 99;
     :hover {
-        background: red;
-        color:  #fff;
         border: 4px solid red;
         box-shadow: 0 3px 6px rgb(243, 86, 86), 0 3px 6px rgb(243, 86, 86),
         0 3px 6px rgb(243, 86, 86), 0 3px 6px rgb(243, 86, 86);
@@ -103,18 +106,17 @@ export const DataPlayer = styled.div`
     padding: 2rem;
     span {
         margin: 5px;
-        border: 1px solid;
         padding: 5px;
-        border-radius: 5px;
+        color: #FFF;
+        z-index: 99;
     }
     span:hover {
-        background: #DAA520;
+        background: #000;
         transition: 0.5s;
-        border: 1px solid #000;
+        border-radius: 5px;
     }
     div {
         margin: 5px;
-        border: 1px solid;
         padding: 5px;
         border-radius: 5px;
         display: flex;
@@ -129,8 +131,7 @@ export const DataPlayer = styled.div`
         }
     }
     div:hover {
-        background: #DAA520;
+        background: #000;
         transition: 0.5s;
-        border: 1px solid #000;
     }
 `;

@@ -1,7 +1,9 @@
+import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { useContext } from "react";
 import { ModalSalaDeTrofeuContext } from "../../context/ModalSalaDeTrofeuContext";
 import Player from "../../interfaces/Player";
+import { Circle, CircleWrapper } from "../../styles/components/CardAnimation";
 import { ButtonActionsPlayer, ButtonBackHome, ButtonTrophy, ContainerPlayer, ContentPlayer, DataPlayer, ImgPlayer, PlayerStyles } from "../../styles/components/PerfilPlayer";
 
 interface PlayerTrofeuProps {
@@ -20,8 +22,15 @@ export default function PerfilPlayer({valor}: PlayerTrofeuProps) {
             {!modalVisible 
                 ? 
                 <PlayerStyles>
+                    <CircleWrapper>
+                        <Circle />
+                    </CircleWrapper>
                     <ImgPlayer>
-                        <img src={imagem} alt={nome} />
+                        <motion.img
+                            src={imagem} alt={nome}
+                            layoutId={imagem}
+                            transition={{ duration: 0.5 }}
+                        />                        
                     </ImgPlayer>
                     <ContentPlayer>
                         <ButtonActionsPlayer>
@@ -35,7 +44,7 @@ export default function PerfilPlayer({valor}: PlayerTrofeuProps) {
                             <span>Posição: {posicao}</span>
                             <span>País: {nacionalidade.nome}</span>
                             <div>
-                                <img alt="Bola de Ouro" src="/player/ballon-door.jpg" />
+                                <img alt="Bola de Ouro" src="/player/ballon-door.png" />
                                 <span>{melhorDoMundo}</span>
                             </div>
                         </DataPlayer>

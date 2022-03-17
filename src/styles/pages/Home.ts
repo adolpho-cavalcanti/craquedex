@@ -25,7 +25,7 @@ export const BarraDePesquisa = styled.div`
 `;
 
 export const Container = styled.div`
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

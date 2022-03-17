@@ -1,7 +1,9 @@
+import { motion } from 'framer-motion';
 import { useContext } from 'react';
 import { ModalSalaDeTrofeuContext } from '../../context/ModalSalaDeTrofeuContext';
 import Player from '../../interfaces/Player';
 import { ButtonBackPlayer, ButtonTrophyTwo, ContainerModal, HeaderModal, Modal, PlacaDourada, Prateleira } from '../../styles/components/ModalSalaDeTrofeu';
+import Variantes from '../Variantes';
 
 interface PlayerTrofeuProps {
     valorPlayer: Player;
@@ -35,9 +37,18 @@ export default function ModalSalaDeTrofeu({valorPlayer}: PlayerTrofeuProps) {
                 <PlacaDourada>
                     <ButtonTrophyTwo disabled>Sala de Troféus</ButtonTrophyTwo>
                 </PlacaDourada>
-                <Prateleira>
-                    {qtdDeTrofeus()}
-                </Prateleira>
+                <motion.div
+                    transition={{
+                        delay: 2
+                    }}
+                    variants={Variantes}
+                    initial="hidden"
+                    animate="visible"
+                >
+                    <Prateleira>
+                        {qtdDeTrofeus()}
+                    </Prateleira>
+                </motion.div>
             </Modal>
         </ContainerModal>
     )

@@ -12,11 +12,11 @@ export const Modal = styled.div`
 display: flex;
   flex-direction: column;
   width: 75%;
-  background-color: #FFF;
+  background-color: #2A4A01;
   color: black;
   border-radius: 10px;
   font-weight: bold;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px #2A4A01, 0 3px 6px #2A4A01;
 `;
 
 export const HeaderModal = styled.div`
@@ -24,7 +24,7 @@ display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 1rem;
-  color: #2A4A01;
+  color: #FFF;
   h3 {
   font-weight: bold;
   font-size: 32px;
@@ -32,22 +32,18 @@ display: flex;
 `;
 
 export const ButtonBackPlayer = styled.button`
-cursor: pointer;
-  padding: 10px 20px;
-  background: #fff;
-  color:  red;
-  font-weight: bold;
-  border: 4px solid red;
-  border-radius: 10px;
-  transition: 0.5s;
-  :hover {
-  background: red;
-  color:  #fff;
-  border: 4px solid red;
-  box-shadow: 0 3px 6px rgb(243, 86, 86), 0 3px 6px rgb(243, 86, 86),
-  0 3px 6px rgb(243, 86, 86), 0 3px 6px rgb(243, 86, 86);
-  transition: 0.5s;
-}
+  cursor: pointer;
+    padding: 10px 20px;
+    background: red;
+    color:  #fff;
+    font-weight: bold;
+    border: 4px solid red;
+    border-radius: 10px;
+    transition: 0.5s;
+    :hover {
+      box-shadow: 0 3px 6px rgb(243, 86, 86), 0 3px 6px rgb(243, 86, 86),
+      0 3px 6px rgb(243, 86, 86), 0 3px 6px rgb(243, 86, 86);
+  }
 `;
 
 export const PlacaDourada = styled.div`
