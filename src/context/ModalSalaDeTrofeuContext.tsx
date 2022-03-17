@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import { createContext, ReactNode, useEffect, useState } from 'react';
+import Loading from "../components/Loading";
 // import ModalSalaDeTrofeu from '../components/ModalSalaDeTrofeu';
 import Player from '../interfaces/Player';
 
@@ -15,7 +16,7 @@ interface ModalSalaDeTrofeuProviderProps {
 
 const ModalSalaDeTrofeu = dynamic(
     () => import("../components/ModalSalaDeTrofeu"), 
-    { loading: () => <p>Carregando ...</p>, ssr: true }
+    { loading: () => <Loading mensagem="Carregando..." />, ssr: true }
 );
 
 export const ModalSalaDeTrofeuContext = createContext({} as ModalSalaDeTrofeuProviderData);

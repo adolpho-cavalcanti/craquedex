@@ -5,8 +5,6 @@ import Player from '../interfaces/Player';
 import { GetServerSideProps } from 'next';
 import { Page, Container, BarraDePesquisa } from '../styles/pages/Home';
 import CardAnimation from '../components/Cardanimation';
-import { motion } from 'framer-motion';
-import Variantes from '../components/Variantes';
 
 interface IPlayerProps {
   players: Player[];
