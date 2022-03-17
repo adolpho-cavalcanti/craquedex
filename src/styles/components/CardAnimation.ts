@@ -24,9 +24,6 @@ export const CircleWrapper = styled.div`
   min-height: 100%;
   overflow: hidden;
   border-top-right-radius: 25px;
-  @media(max-width: 600px) {
-    display: none;
-  }
 `;
 
 export const Circle = styled.div`

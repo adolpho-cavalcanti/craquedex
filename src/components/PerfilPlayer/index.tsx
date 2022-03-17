@@ -3,8 +3,7 @@ import { useRouter } from "next/router";
 import { useContext } from "react";
 import { ModalSalaDeTrofeuContext } from "../../context/ModalSalaDeTrofeuContext";
 import Player from "../../interfaces/Player";
-import { Circle, CircleWrapper } from "../../styles/components/CardAnimation";
-import { ButtonActionsPlayer, ButtonBackHome, ButtonTrophy, ContainerPlayer, ContentPlayer, DataPlayer, ImgPlayer, PlayerStyles } from "../../styles/components/PerfilPlayer";
+import { ButtonActionsPlayer, ButtonBackHome, ButtonTrophy, CirclePlayer, CircleWrapperPlayer, ContainerPlayer, ContentPlayer, DataPlayer, ImgPlayer, PlayerStyles } from "../../styles/components/PerfilPlayer";
 
 interface PlayerTrofeuProps {
     valor: Player;
@@ -22,9 +21,9 @@ export default function PerfilPlayer({valor}: PlayerTrofeuProps) {
             {!modalVisible 
                 ? 
                 <PlayerStyles>
-                    <CircleWrapper>
-                        <Circle />
-                    </CircleWrapper>
+                    <CircleWrapperPlayer>
+                        <CirclePlayer />
+                    </CircleWrapperPlayer>
                     <ImgPlayer>
                         <motion.img
                             src={imagem} alt={nome}

@@ -30,6 +30,29 @@ export const PlayerStyles = styled.div`
         height: 100%;
     }
 `;
+export const CircleWrapperPlayer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  border-top-right-radius: 25px;
+  @media(max-width: 600px) {
+    display: none;
+  }
+`;
+
+export const CirclePlayer = styled.div`
+  position: absolute;
+  width: 350px;
+  height: 280px;
+  top: -4.2em;
+  right: -10em;
+  z-index: 5;
+  background-color: #000;
+  border-radius: 50%;
+`;
 export const ImgPlayer = styled.div`
     width: 30%;
     height: 100%;
