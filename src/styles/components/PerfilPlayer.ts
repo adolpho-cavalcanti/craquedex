@@ -58,8 +58,10 @@ export const ImgPlayer = styled.div`
     height: 100%;
     background: #000;
     border-bottom-left-radius: 25px;
+    display: flex;
+    justify-content: center;
     img {
-        width: 100%;
+        width: 50%;
         height: 100%;
     }
     @media(max-width: 600px) {
