@@ -22,7 +22,7 @@ export const FotoJogador = styled.section`
     img {
         width: 100%;
         height: 300px;
-        border: 5px solid #2A4A01;
+        border: 5px solid #000;
         border-radius: 5px;
     }
 `;

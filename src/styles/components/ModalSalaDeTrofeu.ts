@@ -12,11 +12,11 @@ export const Modal = styled.div`
 display: flex;
   flex-direction: column;
   width: 75%;
-  background-color: #2A4A01;
+  background-color: #000;
   color: black;
   border-radius: 10px;
   font-weight: bold;
-  box-shadow: 0 3px 6px #2A4A01, 0 3px 6px #2A4A01;
+  box-shadow: 0 3px 6px #000, 0 3px 6px #000;
 `;
 
 export const HeaderModal = styled.div`
@@ -57,7 +57,7 @@ width:100%;
 export const ButtonTrophyTwo = styled.button`
 cursor: pointer;
   padding: 10px 20px;
-  background: #DAA520;
+  background: yellow;
   color:  #000;
   font-weight: bold;
   border-radius: 30px;

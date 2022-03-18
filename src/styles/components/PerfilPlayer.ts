@@ -18,11 +18,11 @@ export const PlayerStyles = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    background: #2A4A01;
+    background: #000;
     height: 320px;
     width: 100%;
     position: relative;
-    box-shadow: 0 3px 6px #2A4A01, 0 3px 6px #2A4A01;
+    box-shadow: 0 3px 6px #000, 0 3px 6px #000;
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
     @media(max-width: 600px) {
@@ -50,7 +50,7 @@ export const CirclePlayer = styled.div`
   top: -4.2em;
   right: -10em;
   z-index: 5;
-  background-color: #000;
+  background-color: yellow;
   border-radius: 50%;
 `;
 export const ImgPlayer = styled.div`
@@ -87,7 +87,7 @@ export const ButtonActionsPlayer = styled.div`
 export const ButtonTrophy = styled.button`
     cursor: pointer;
     padding: 10px 20px;
-    background: #DAA520;
+    background: yellow;
     color:  #000;
     font-weight: bold;
     border-radius: 30px;
@@ -134,7 +134,8 @@ export const DataPlayer = styled.div`
         z-index: 99;
     }
     span:hover {
-        background: #000;
+        background: yellow;
+        color: #000;
         transition: 0.5s;
         border-radius: 5px;
     }

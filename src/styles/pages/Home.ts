@@ -18,7 +18,7 @@ export const BarraDePesquisa = styled.div`
     input{
         width: 90%;
         outline: none;
-        border: 10px solid #2A4A01;
+        border: 10px solid #000;
         border-radius: 10px;
         padding: 10px;
     }

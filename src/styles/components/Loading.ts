@@ -10,6 +10,6 @@ export const LoadingContainer = styled.div`
 `;
 
 export const Mensagem = styled.h1`
-    color: #2A4A01;
+    color: #000;
 `;
 
