@@ -14,10 +14,10 @@ export default function PlayerPage({ player }: PlayerPageProps) {
  
     const legendPlayer = player[0];
     return (
-        <ModalSalaDeTrofeuProvider valor={legendPlayer}>
+        <ModalSalaDeTrofeuProvider player={legendPlayer}>
             <Page>
                 <HeaderSite />
-                <PerfilPlayer valor={legendPlayer} />
+                <PerfilPlayer />
             </Page>
         </ModalSalaDeTrofeuProvider>
     )

@@ -1,17 +1,17 @@
 import dynamic from "next/dynamic";
 import { createContext, ReactNode, useEffect, useState } from 'react';
 import Loading from "../components/Loading";
-// import ModalSalaDeTrofeu from '../components/ModalSalaDeTrofeu';
 import Player from '../interfaces/Player';
 
 interface ModalSalaDeTrofeuProviderData {
     modalVisible: boolean;
     setModalVisible: (value: boolean) => void;
+    player: Player;
 }
 
 interface ModalSalaDeTrofeuProviderProps {
     children: ReactNode;
-    valor: Player;
+    player: Player
 }
 
 const ModalSalaDeTrofeu = dynamic(
@@ -21,18 +21,19 @@ const ModalSalaDeTrofeu = dynamic(
 
 export const ModalSalaDeTrofeuContext = createContext({} as ModalSalaDeTrofeuProviderData);
 
-export function ModalSalaDeTrofeuProvider({children, valor}: ModalSalaDeTrofeuProviderProps) {
+export function ModalSalaDeTrofeuProvider({children, player}: ModalSalaDeTrofeuProviderProps) {
 
     const [modalVisible, setModalVisible] = useState(false);
 
     return(
         <ModalSalaDeTrofeuContext.Provider value={{
+            setModalVisible,
             modalVisible,
-            setModalVisible
+            player
         }}>
             {children}
             {modalVisible &&
-                <ModalSalaDeTrofeu valorPlayer={valor}/> 
+                <ModalSalaDeTrofeu /> 
             }
 
         </ModalSalaDeTrofeuContext.Provider>

@@ -1,19 +1,14 @@
 import { motion } from 'framer-motion';
 import { useContext } from 'react';
 import { ModalSalaDeTrofeuContext } from '../../context/ModalSalaDeTrofeuContext';
-import Player from '../../interfaces/Player';
 import { ButtonBackPlayer, ButtonTrophyTwo, ContainerModal, HeaderModal, Modal, PlacaDourada, Prateleira } from '../../styles/components/ModalSalaDeTrofeu';
 import Variantes from '../Variantes';
 
-interface PlayerTrofeuProps {
-    valorPlayer: Player;
-}
+export default function ModalSalaDeTrofeu() {
 
-export default function ModalSalaDeTrofeu({valorPlayer}: PlayerTrofeuProps) {
+    const { setModalVisible, player } = useContext(ModalSalaDeTrofeuContext);
 
-    const { setModalVisible } = useContext(ModalSalaDeTrofeuContext);
-
-    const { nome, titulos } = valorPlayer;
+    const { nome, titulos } = player;
 
     const qtdDeTrofeus = () => {
         var rows = [];
