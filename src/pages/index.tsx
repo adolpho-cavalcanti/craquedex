@@ -5,6 +5,7 @@ import Player from '../interfaces/Player';
 import { GetServerSideProps } from 'next';
 import { Page, Container, BarraDePesquisa } from '../styles/pages/Home';
 import CardAnimation from '../components/Cardanimation';
+import InputSearch from '../components/InputSearch';
 
 interface IPlayerProps {
   players: Player[];
@@ -14,6 +15,10 @@ export default function Home({players}: IPlayerProps) {
 
   const [search, setSearch] = useState('');
 
+  function quandoEscrever(texto) {
+    setSearch(texto);
+  }
+
   const playersSearched = useMemo(() => {
     const lowerSearch = search.toLowerCase();
     return players.filter(({ nome }) => nome.toLowerCase().includes(lowerSearch));
@@ -22,15 +27,7 @@ export default function Home({players}: IPlayerProps) {
   return (
     <Page>
       <HeaderSite />
-      <BarraDePesquisa>
-        <input 
-          type="text"
-          placeholder="Procurar a Lenda..." 
-          id="playerSearch"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </BarraDePesquisa>
+      <InputSearch onSearch={quandoEscrever}/>
       <Container>
           {playersSearched.map((player) => (
               <CardAnimation 
