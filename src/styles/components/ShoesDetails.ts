@@ -36,3 +36,7 @@ export const SpacedHorizontalContainerFooter = styled.div`
   align-items: center;
   margin-bottom: 20px;
 `;
+
+export const LinkCard = styled.a`
+  text-decoration: none;
+`;

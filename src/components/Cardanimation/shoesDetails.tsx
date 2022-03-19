@@ -1,8 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Player from "../../interfaces/Player";
-import { LinkCard } from "../../styles/components/Card";
-import { DetailsContainer, MediumText, SmallText, SpacedHorizontalContainer, SpacedHorizontalContainerFooter } from "../../styles/components/ShoesDetails";
+import { LinkCard, DetailsContainer, MediumText, SmallText, SpacedHorizontalContainer, SpacedHorizontalContainerFooter } from "../../styles/components/ShoesDetails";
 import { Marginer } from "../Marginer/index";
 
 interface CardAnimationProps {
@@ -36,10 +35,10 @@ export function ShoesDetails({ player }: CardAnimationProps) {
             </SpacedHorizontalContainerFooter>
             <SpacedHorizontalContainerFooter>
             <Link href={`/player/${player.id}`}>
-            <LinkCard>
-                <SmallText> Mais detalhes...</SmallText>
-                </LinkCard>
-        </Link>
+                <LinkCard>
+                    <SmallText> Mais detalhes...</SmallText>
+                    </LinkCard>
+            </Link>
             </SpacedHorizontalContainerFooter>
 
         </DetailsContainer>

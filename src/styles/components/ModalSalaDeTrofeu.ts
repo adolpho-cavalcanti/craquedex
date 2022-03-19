@@ -55,17 +55,18 @@ width:100%;
 `;
 
 export const ButtonTrophyTwo = styled.button`
-cursor: pointer;
-  padding: 10px 20px;
-  background: yellow;
-  color:  #000;
-  font-weight: bold;
-  border-radius: 30px;
-  transition: 0.5s;
-  :hover {
-  box-shadow: 0 3px 6px #000, 0 3px 6px #000,
-  0 3px 6px #000, 0 3px 6px #000;
-}
+  cursor: pointer;
+    padding: 10px 20px;
+    background: yellow;
+    color:  #000;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 30px;
+    transition: 0.5s;
+    :hover {
+      box-shadow: 0 3px 6px yellow, 0 3px 6px yellow,
+      0 3px 6px yellow, 0 3px 6px yellow;
+  }
 `;
 
 export const Prateleira = styled.div`
@@ -77,21 +78,15 @@ display: flex;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding-bottom:20px;
-  background:
-    linear-gradient(
-      #673A1B 0%,#845630 5%,#7E4D27 10%,#B1763C 15%,#54341C 20%,
-      #673A1B 25%,#845630 30%,#7E4D27 35%,#B1763C 40%,#54341C 46%,
-      #673A1B 51%,#845630 56%,#7E4D27 61%,#B1763C 67%,#54341C 73%,
-      #673A1B 78%,#845630 85%,#7E4D27 89%,#B1763C 94%,#54341C 100%
-    )
-    no-repeat;
     img {
-  margin: 20px;
-  margin-bottom: 0px;
-  padding: 5px;
-  width: 160px;
-  height: 240px;
-  border-radius: 20px;
-  border-bottom: 20px solid #4c2601;
-}
+      margin: 20px;
+      margin-bottom: 0px;
+      padding: 5px;
+      width: 160px;
+      height: 220px;
+      border-radius: 20px;
+      border-bottom: 20px solid #222;
+      box-shadow: 0 3px 6px #FFF, 0 3px 6px #FFF;
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    }
 `;

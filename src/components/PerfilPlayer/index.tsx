@@ -33,7 +33,7 @@ export default function PerfilPlayer({valor}: PlayerTrofeuProps) {
                     </ImgPlayer>
                     <ContentPlayer>
                         <ButtonActionsPlayer>
-                            <ButtonTrophy type="button" onClick={() =>setModalVisible(true)}>SALA DE TROFÉUS</ButtonTrophy>
+                            <ButtonTrophy type="button" onClick={() =>setModalVisible(true)}>TROFÉUS</ButtonTrophy>
                             <ButtonBackHome type="button" onClick={() => router.push('/')}>
                                 X
                             </ButtonBackHome>

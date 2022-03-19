@@ -35,7 +35,7 @@ export default function ModalSalaDeTrofeu({valorPlayer}: PlayerTrofeuProps) {
                     <ButtonBackPlayer onClick={() => setModalVisible(false)}>X</ButtonBackPlayer>
                 </HeaderModal>
                 <PlacaDourada>
-                    <ButtonTrophyTwo disabled>Sala de Troféus</ButtonTrophyTwo>
+                    <ButtonTrophyTwo disabled>TROFÉUS</ButtonTrophyTwo>
                 </PlacaDourada>
                 <motion.div
                     transition={{
