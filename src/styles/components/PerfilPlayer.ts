@@ -61,7 +61,7 @@ export const ImgPlayer = styled.div`
     display: flex;
     justify-content: center;
     img {
-        width: 50%;
+        width: 70%;
         height: 100%;
     }
     @media(max-width: 600px) {

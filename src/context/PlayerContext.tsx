@@ -1,22 +1,39 @@
-import { createContext, ReactNode, useEffect, useState } from 'react';
+import { createContext, ReactNode, useEffect, useMemo, useState } from 'react';
+import Player from '../interfaces/Player';
 
-interface ModalSalaDeTrofeuProviderProps {
-    children: ReactNode;
+interface PlayerProviderData {
+    // quandoEscrever: (value: string) => void;
+    onSearch: (value: string) => void;
+    search: string;
+    playersSearched: Player[];
 }
 
+interface PlayerProviderProps {
+    children: ReactNode;
+    players: Player[];
+}
 
-export const PlayerContext = createContext('');// ModalSalaDeTrofeuProviderData);
+export const PlayerContext = createContext({} as PlayerProviderData);
 
-export function ModalSalaDeTrofeuProvider({children}: ModalSalaDeTrofeuProviderProps) {
+export function PlayerProvider({ children, players }: PlayerProviderProps) {
 
     const [search, setSearch] = useState('');
 
-    function quandoEscrever(texto) {
+    function onSearch(texto) {
         setSearch(texto);
     }
 
+    const playersSearched = useMemo(() => {
+        const lowerSearch = search.toLowerCase();
+        return players.filter(({ nome }) => nome.toLowerCase().includes(lowerSearch));
+    }, [players, search]);
+
     return(
-        <PlayerContext.Provider value={''}>
+        <PlayerContext.Provider value={{
+            onSearch,
+            search,
+            playersSearched
+        }}>
             {children}
         </PlayerContext.Provider>
     );
