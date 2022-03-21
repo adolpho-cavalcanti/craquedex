@@ -14,6 +14,7 @@ export default function InputSearch() {
         <BarraDePesquisa>
             <input 
                 type="text"
+                autoComplete="off"
                 placeholder="Procurar a Lenda..." 
                 id="playerSearch"
                 value={search}

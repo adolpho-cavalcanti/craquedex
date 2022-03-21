@@ -9,7 +9,7 @@ interface CardAnimationProps {
 }
 
 export function ShoesDetails({ player }: CardAnimationProps) {
-    const nation = player.nacionalidade;
+    const { nacionalidade } = player;
 
     const qtdBolaDeOuro = () => {
         var rows = [];
@@ -24,8 +24,8 @@ export function ShoesDetails({ player }: CardAnimationProps) {
             <SmallText>{player.posicao}</SmallText>
             <SpacedHorizontalContainer>
                 <MediumText>{player.nome}</MediumText>
-                <img src={nation.bandeira} 
-                    alt={nation.nome}
+                <img src={nacionalidade.bandeira} 
+                    alt={nacionalidade.nome}
                     width="50px" height="40px"
                 />
             </SpacedHorizontalContainer>

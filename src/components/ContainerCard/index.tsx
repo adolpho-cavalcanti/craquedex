@@ -10,9 +10,9 @@ export default function ContainerCard() {
         <Container>
             {playersSearched.map((player) => (
                 <CardAnimation 
-                key={player.id}
-                player={player}
-                layoutId={player.imagem}
+                    key={player.id}
+                    player={player}
+                    layoutId={player.imagem}
                 />
             ))}
         </Container>

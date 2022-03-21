@@ -2,6 +2,7 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 import React from "react";
 import Player from "../../interfaces/Player";
 import { BottomContainer, CardContainer, Circle, CircleWrapper, Shoes, ShoesWrapper, TopContainer } from "../../styles/components/CardAnimation";
+import PowerSkill from "../PowerSkill";
 import { ShoesDetails } from "./shoesDetails";
 
 interface CardAnimationProps {
@@ -10,6 +11,7 @@ interface CardAnimationProps {
 }
 
 export default function CardAnimation({ player, layoutId }: CardAnimationProps) {
+    const { titulos } = player;
     const x = useMotionValue(0);
     const y = useMotionValue(0);
     const rotateX = useTransform(y, [-100, 100], [30, -30]);
@@ -25,6 +27,9 @@ export default function CardAnimation({ player, layoutId }: CardAnimationProps) 
             <TopContainer>
                 <CircleWrapper>
                     <Circle />
+                    <PowerSkill 
+                        playerSkill={player}
+                    />
                 </CircleWrapper>
                 <ShoesWrapper>
                     <Shoes

@@ -19,7 +19,7 @@ export const PlayerStyles = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     background: #000;
-    height: 320px;
+    height: 350px;
     width: 100%;
     position: relative;
     box-shadow: 0 3px 6px #000, 0 3px 6px #000;
@@ -60,9 +60,10 @@ export const ImgPlayer = styled.div`
     border-bottom-left-radius: 25px;
     display: flex;
     justify-content: center;
+    align-items: center;
     img {
         width: 70%;
-        height: 100%;
+        height: 80%;
     }
     @media(max-width: 600px) {
         width: 100%;
@@ -126,38 +127,90 @@ export const ButtonBackHome = styled.button`
 `;
 export const DataPlayer = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
-    span {
-        margin: 5px;
-        padding: 5px;
-        color: #FFF;
-        z-index: 99;
-    }
-    span:hover {
-        background: yellow;
-        color: #000;
-        transition: 0.5s;
-        border-radius: 5px;
-    }
-    div {
-        margin: 5px;
-        padding: 5px;
-        border-radius: 5px;
+    width: 100%;
+    section:first-child {
         display: flex;
-        align-items: center;
-        img {
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        width: 50%;
+        span {
+            margin: 5px;
+            padding: 5px;
+            color: #FFF;
+            z-index: 99;
+        }
+        span:hover {
+            background: yellow;
+            color: #000;
+            transition: 0.5s;
+            border-radius: 5px;
+        }
+        div {
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+            }
+            span {
+                border: none;
+            }
+        }
+        div:hover {
+            background: #000;
+            transition: 0.5s;
+        }
+    }
+    section:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 50%;
+        margin-bottom: 1rem;
+        * {
+            padding: 10px;
+            font-size: 28px;
+        }
+        ul > li {
+            color: white;
+            font-size: 14px;
+            padding: 2px;
+            list-style-type: none;
+            :first-child {
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+        ul {
+            border: 1px solid yellow;
+            border-radius: 5px;
         }
         span {
-            border: none;
+            color: #000;
+            font-size: 18px;
+            background: yellow;
+            border-radius: 5px;
+            margin-left: 15px;
+            padding: 5px !important;
+            margin-bottom: 5px;
         }
     }
-    div:hover {
-        background: #000;
-        transition: 0.5s;
+    @media(max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        section:first-child, section:last-child {
+            width: 100%;
+            padding: 5px;
+        }
+        section:last-child {
+            align-items: center;
+            justify-content: flex-start;
+        }
     }
 `;
