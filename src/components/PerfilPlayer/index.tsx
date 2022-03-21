@@ -35,15 +35,13 @@ export default function PerfilPlayer() {
                             </ButtonBackHome>
                         </ButtonActionsPlayer>
                         <DataPlayer>
-                            <section>
-                                <span>Nome: {nome}</span>
-                                <span>Posição: {posicao}</span>
-                                <span>País: {nacionalidade.nome}</span>
-                                <div>
-                                    <Image alt="Bola de Ouro" src="/player/ballon-door.png" width="35px" height="35px" />
-                                    <span>{melhorDoMundo}</span>
-                                </div>
-                            </section>
+                            <span>Nome: {nome}</span>
+                            <span>Posição: {posicao}</span>
+                            <span>País: {nacionalidade.nome}</span>
+                            <div>
+                                <Image alt="Bola de Ouro" src="/player/ballon-door.png" width="35px" height="35px" />
+                                <span>{melhorDoMundo}</span>
+                            </div>
                         </DataPlayer>
                     </ContentPlayer>
                 </PlayerStyles>

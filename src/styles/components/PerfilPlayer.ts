@@ -127,51 +127,40 @@ export const ButtonBackHome = styled.button`
 export const DataPlayer = styled.div`
     display: flex;
     width: 100%;
-    section:first-child {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    span {
+        margin: 5px;
+        padding: 5px;
+        color: #FFF;
+        z-index: 99;
+    }
+    span:hover {
+        background: yellow;
+        color: #000;
+        transition: 0.5s;
+        border-radius: 5px;
+    }
+    div {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2rem;
+        align-items: center;
         width: 100%;
-        span {
-            margin: 5px;
-            padding: 5px;
-            color: #FFF;
-            z-index: 99;
+        img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
         }
-        span:hover {
-            background: yellow;
-            color: #000;
-            transition: 0.5s;
-            border-radius: 5px;
-        }
-        div {
-            margin: 5px;
-            padding: 5px;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            img {
-                width: 25px;
-                height: 25px;
-                border-radius: 50%;
-            }
-            span {
-                border: none;
-            }
-        }
-        div:hover {
-            background: #000;
-            transition: 0.5s;
+        span:last-child {
+            border: none;
+            width: 100%;
         }
     }
-    @media(max-width: 600px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        section:first-child {
-            width: 100%;
-            padding: 5px;
-        }
+    div:hover {
+        background: #000;
+        transition: 0.5s;
     }
 `;
