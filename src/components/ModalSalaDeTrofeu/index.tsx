@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { useContext } from 'react';
 import { ModalSalaDeTrofeuContext } from '../../context/ModalSalaDeTrofeuContext';
 import { ButtonBackPlayer, ButtonTrophyTwo, ContainerModal, HeaderModal, Modal, PlacaDourada, Prateleira } from '../../styles/components/ModalSalaDeTrofeu';
@@ -16,7 +17,11 @@ export default function ModalSalaDeTrofeu() {
         titulos.map(titulo =>{
             for (var i = 1; i <= titulo.qtdTitulos; i++) {
                 increment++;
-                rows.push(<img key={increment} alt={titulo.nome} src={titulo.imagem} />);
+                rows.push(
+                    <div>
+                        <Image key={increment} alt={titulo.nome} src={titulo.imagem} width="160px" height="220px" />
+                    </div>
+                );
             }
         });
         return rows;

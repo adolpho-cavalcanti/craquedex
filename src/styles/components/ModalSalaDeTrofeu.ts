@@ -70,7 +70,7 @@ export const ButtonTrophyTwo = styled.button`
 `;
 
 export const Prateleira = styled.div`
-display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
@@ -78,7 +78,7 @@ display: flex;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding-bottom:20px;
-    img {
+    div {
       margin: 20px;
       margin-bottom: 0px;
       padding: 5px;

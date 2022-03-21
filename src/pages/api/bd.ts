@@ -5,7 +5,7 @@
       "posicao": "Atacante",
       "imagem": "/player/pele.png",
       "nacionalidade": 
-        {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
+        {"nome": "Brasil", "bandeira": "/player/bandeiras/brasil.png"}
       ,
       "melhorDoMundo": 7,
       "titulos": [
@@ -30,7 +30,7 @@
       "posicao": "Atacante",
       "imagem": "/player/messi.png",
       "nacionalidade": 
-        {"nome": "Argentina", "bandeira": "player/bandeiras/argentina.png"}
+        {"nome": "Argentina", "bandeira": "/player/bandeiras/argentina.png"}
       ,
       "melhorDoMundo": 7,
       "titulos": [
@@ -49,7 +49,7 @@
       "posicao": "Atacante",
       "imagem": "/player/cristiano-ronaldo.png",
       "nacionalidade": 
-        {"nome": "Portugal", "bandeira": "player/bandeiras/portugal.png"}
+        {"nome": "Portugal", "bandeira": "/player/bandeiras/portugal.png"}
       ,
       "melhorDoMundo": 5,
       "titulos": [
@@ -68,7 +68,7 @@
       "posicao": "Atacante",
       "imagem": "/player/ronaldo.png",
       "nacionalidade": 
-        {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
+        {"nome": "Brasil", "bandeira": "/player/bandeiras/brasil.png"}
       ,
       "melhorDoMundo": 3,
       "titulos": [
@@ -87,7 +87,7 @@
       "posicao": "Meio Campo",
       "imagem": "/player/zidane.png",
       "nacionalidade": 
-        {"nome": "França", "bandeira": "player/bandeiras/franca.png"}
+        {"nome": "França", "bandeira": "/player/bandeiras/franca.png"}
       ,
       "melhorDoMundo": 2,
       "titulos": [
@@ -112,7 +112,7 @@
       "posicao": "Atacante",
       "imagem": "/player/romario.png",
       "nacionalidade": 
-        {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
+        {"nome": "Brasil", "bandeira": "/player/bandeiras/brasil.png"}
       ,
       "melhorDoMundo": 1,
       "titulos": [
@@ -131,7 +131,7 @@
       "posicao": "Atacante",
       "imagem": "/player/ronaldinho.png",
       "nacionalidade": 
-        {"nome": "Brasil", "bandeira": "player/bandeiras/brasil.png"}
+        {"nome": "Brasil", "bandeira": "/player/bandeiras/brasil.png"}
       ,
       "melhorDoMundo": 2,
       "titulos": [
@@ -162,7 +162,7 @@
       "posicao": "Atacante",
       "imagem": "/player/di-stefano.png",
       "nacionalidade": 
-        {"nome": "Espanha", "bandeira": "player/bandeiras/espanha.png"}
+        {"nome": "Espanha", "bandeira": "/player/bandeiras/espanha.png"}
       ,
       "melhorDoMundo": 2,
       "titulos": [
@@ -181,7 +181,7 @@
       "posicao": "Atacante",
       "imagem": "/player/puskas.png",
       "nacionalidade": 
-        {"nome": "Hungria", "bandeira": "player/bandeiras/hungria.png"}
+        {"nome": "Hungria", "bandeira": "/player/bandeiras/hungria.png"}
       ,
       "melhorDoMundo": 1,
       "titulos": [
@@ -200,7 +200,7 @@
       "posicao": "Atacante",
       "imagem": "/player/shevchenko.png",
       "nacionalidade": 
-        {"nome": "Ucrânia", "bandeira": "player/bandeiras/ucrania.png"}
+        {"nome": "Ucrânia", "bandeira": "/player/bandeiras/ucrania.png"}
       ,
       "melhorDoMundo": 1,
       "titulos": [
@@ -219,7 +219,7 @@
       "posicao": "Meio Campo",
       "imagem": "/player/cruijff.png",
       "nacionalidade": 
-        {"nome": "Holanda", "bandeira": "player/bandeiras/holanda.png"}
+        {"nome": "Holanda", "bandeira": "/player/bandeiras/holanda.png"}
       ,
       "melhorDoMundo": 3,
       "titulos": [
@@ -238,7 +238,7 @@
       "posicao": "Zagueiro",
       "imagem": "/player/beckenbauer.png",
       "nacionalidade": 
-        {"nome": "Alemanha", "bandeira": "player/bandeiras/alemanha.png"}
+        {"nome": "Alemanha", "bandeira": "/player/bandeiras/alemanha.png"}
       ,
       "melhorDoMundo": 2,
       "titulos": [

@@ -9,15 +9,18 @@ export const HeaderLogo = styled.div`
     align-items:center;
     img {
         width: 50%;
+        height: 100%;
     }
     @media(max-width: 900px) {
         img {
             width: 75%;
+            height: 100%;
         }
     }
     @media(max-width: 600px) {
         img {
             width: 100%;
+            height: 100%;
         }
     }
 `;

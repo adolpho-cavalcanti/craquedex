@@ -6,7 +6,6 @@ export const ContainerPlayer = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
     @media(max-width: 600px) {
         width: 100%;
         display: flex;

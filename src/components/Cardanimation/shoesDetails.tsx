@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Player from "../../interfaces/Player";
@@ -14,7 +15,7 @@ export function ShoesDetails({ player }: CardAnimationProps) {
     const qtdBolaDeOuro = () => {
         var rows = [];
         for (var i = 1; i <= player.melhorDoMundo; i++) {
-            rows.push(<img key={i} alt="Bola de Ouro" src="/player/ballon-door.png" width="30px" height="35px" />);
+            rows.push(<Image key={i} alt="Bola de Ouro" src="/player/ballon-door.png" width="30px" height="35px" />);
         }
         return rows;
     }
@@ -24,7 +25,7 @@ export function ShoesDetails({ player }: CardAnimationProps) {
             <SmallText>{player.posicao}</SmallText>
             <SpacedHorizontalContainer>
                 <MediumText>{player.nome}</MediumText>
-                <img src={nacionalidade.bandeira} 
+                <Image src={nacionalidade.bandeira} 
                     alt={nacionalidade.nome}
                     width="50px" height="40px"
                 />
@@ -34,7 +35,7 @@ export function ShoesDetails({ player }: CardAnimationProps) {
                 {qtdBolaDeOuro()}
             </SpacedHorizontalContainerFooter>
             <SpacedHorizontalContainerFooter>
-            <Link href={`/player/${player.id}`}>
+            <Link href={`/player/${player.id}`} passHref>
                 <LinkCard>
                     <SmallText> Mais detalhes...</SmallText>
                     </LinkCard>

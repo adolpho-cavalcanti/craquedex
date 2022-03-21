@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { useContext } from "react";
 import { ModalSalaDeTrofeuContext } from "../../context/ModalSalaDeTrofeuContext";
@@ -40,7 +41,7 @@ export default function PerfilPlayer() {
                                 <span>Posição: {posicao}</span>
                                 <span>País: {nacionalidade.nome}</span>
                                 <div>
-                                    <img alt="Bola de Ouro" src="/player/ballon-door.png" />
+                                    <Image alt="Bola de Ouro" src="/player/ballon-door.png" width="35px" height="35px" />
                                     <span>{melhorDoMundo}</span>
                                 </div>
                             </section>
@@ -50,7 +51,7 @@ export default function PerfilPlayer() {
                                     <li>Copa do Mundo: 10</li>
                                     <li>Champions League: 8</li>
                                     <li>Libertadores: 8</li>
-                                    <li>Ballon d'Or: 5</li>
+                                    <li>Bola de Ouro: 5</li>
                                 </ul>
                                 <PowerSkill 
                                     playerSkill={player}
