@@ -27,9 +27,6 @@ export default function CardAnimation({ player, layoutId }: CardAnimationProps) 
             <TopContainer>
                 <CircleWrapper>
                     <Circle />
-                    <PowerSkill 
-                        playerSkill={player}
-                    />
                 </CircleWrapper>
                 <ShoesWrapper>
                     <Shoes
