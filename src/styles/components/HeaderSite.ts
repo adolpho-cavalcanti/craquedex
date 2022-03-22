@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HeaderLogo = styled.div`
+export const HeaderLogo = styled.header`
     width: 100%;
     height: 70px;
     margin: 1rem;

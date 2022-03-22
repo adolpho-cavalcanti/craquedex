@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContainerModal = styled.div`
+export const ContainerModal = styled.main`
 width: 100%;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@ display: flex;
   box-shadow: 0 3px 6px #000, 0 3px 6px #000;
 `;
 
-export const HeaderModal = styled.div`
+export const HeaderModal = styled.section`
 display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,7 @@ export const ButtonBackPlayer = styled.button`
   }
 `;
 
-export const PlacaDourada = styled.div`
+export const PlacaDourada = styled.section`
 width:100%;
   display: flex;
   flex-direction: column;
@@ -69,7 +69,7 @@ export const ButtonTrophyTwo = styled.button`
   }
 `;
 
-export const Prateleira = styled.div`
+export const Prateleira = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
